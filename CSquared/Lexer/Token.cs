@@ -1,0 +1,37 @@
+﻿namespace CSquared.Lexer;
+
+public enum TokenType {
+    Identifier,
+    StringLiteral,
+    IntegerLiteral,
+    FloatLiteral,
+    ParenthesisLeft,
+    ParenthesisRight,
+    BraceLeft,
+    BraceRight,
+    BracketLeft,
+    BracketRight,
+    AngleLeft,
+    AngleRight,
+    Dot,
+    Comma,
+    Colon,
+    Semicolon,
+    Plus,
+    Minus,
+    Star,
+    Slash,
+    Percent,
+    Exclamation,
+    Tilde,
+    Question,
+    Caret,
+    And,
+    Or,
+    Hash,
+    Dollar,
+    Equal,
+    BackSlash,
+}
+
+public record Token(TokenType Type, Position From, Position To);
